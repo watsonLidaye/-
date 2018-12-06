@@ -1,0 +1,21 @@
+/* common/modules/textarea/index.wxss */
+.textarea {
+  width: 750rpx;
+  height: 240rpx;
+  box-sizing: border-box;
+  padding: 24rpx 32rpx;
+  background: #fff;
+  font-size: 34rpx;
+  color: #333;
+  position: relative;
+}
+.textarea_tips {
+  position: absolute;
+  font-size: 34rpx;
+  color: #b2b2b2;
+  right: 32rpx;
+  bottom: 24rpx;
+}
+.color_ddd {
+  color: #ddd;
+}

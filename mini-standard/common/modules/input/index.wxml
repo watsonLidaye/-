@@ -1,0 +1,14 @@
+<!-- common/modules/input/index.wxml -->
+<!-- {{inputName}} -->
+<view wx:if="{{mode === 'single'}}" class="singleWrap">
+  <view class="inputInner">
+    <view class="flex_30 inputName">{{title}}</view>
+    <input class="flex_1" placeholder-class="placeholder" placeholder="{{placeholder}}" bindinput="inputer" />
+  </view>
+</view>
+<view wx:if="{{mode === 'mutiple'}}" class="mutipleWrap">
+  <view class="mutipleInner {{line === 'bottom'?'border_eee':''}}">
+    <view class="flex_30 inputName">{{title}}</view>
+    <input class="flex_1" placeholder-class="placeholder" placeholder="{{placeholder}}" bindinput="inputer" />
+  </view>
+</view>

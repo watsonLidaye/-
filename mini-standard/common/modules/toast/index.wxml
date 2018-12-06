@@ -1,0 +1,22 @@
+<!-- common/modules/toast/index.wxml -->
+<view class="toast" wx:if="{{toastVisible}}">
+  <view wx:if="{{toastType==='success'}}" class='toastWrap'>
+    <image class="toastPic" src="./image/icon_successed_small.png"></image>
+    <view class="toastInfo">{{toastInfo}}</view>
+  </view>
+  <view wx:if="{{toastType==='fail'}}" class='toastWrap'>
+    <image class="toastPic" src="./image/icon_error.png"></image>
+    <view class="toastInfo">{{toastInfo}}</view>
+  </view>
+  <view wx:if="{{toastType==='warn'}}" class='toastWrap'>
+    <image class="toastPic" src="./image/icon_warning.png"></image>
+    <view class="toastInfo">{{toastInfo}}</view>
+  </view>
+  <view wx:if="{{toastType==='loading'}}" class='toastWrap'>
+    <image class="toastPic {{toastType==='loading'?'animation':''}}" src="./image/icon_loading_big.png"></image>
+    <view class="toastInfo">{{toastInfo}}</view>
+  </view>
+  <view wx:if="{{toastType==='text'}}" class='toastText'>
+    <view class="toastInfo">{{toastInfo}}</view>
+  </view>
+</view>

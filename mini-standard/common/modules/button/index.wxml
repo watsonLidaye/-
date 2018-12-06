@@ -1,0 +1,33 @@
+<!-- common/modules/button/index.wxml -->
+<block wx:if="{{btnType === 'primary'}}">
+  <view wx:if="{{btnStatus === 'normal'}}" hover-class="primaryPress" class="btn primaryNormal {{btnSize?btnSize:''}}">
+    <text>{{btnCnt}}</text>
+  </view>
+  <view wx:if="{{btnStatus === 'disable'}}" class="btn primaryDisable {{btnSize?btnSize:''}}">
+    <text>{{btnCnt}}</text>
+  </view>
+</block>
+<block wx:if="{{btnType === 'default'}}">
+  <view wx:if="{{btnStatus === 'normal'}}" hover-class="defaultPress" class="btn defaultNormal {{btnSize?btnSize:''}}">
+    <text>{{btnCnt}}</text>
+  </view>
+  <view wx:if="{{btnStatus === 'disable'}}" class="btn defaultDisable {{btnSize?btnSize:''}}">
+    <text>{{btnCnt}}</text>
+  </view>
+</block>
+<block wx:if="{{btnType === 'danger'}}">
+  <view wx:if="{{btnStatus === 'normal'}}" hover-class="dangerPress" class="btn dangerNormal {{btnSize?btnSize:''}}">
+    <text>{{btnCnt}}</text>
+  </view>
+  <view wx:if="{{btnStatus === 'disable'}}" class="btn dangerDisable {{btnSize?btnSize:''}}">
+    <text>{{btnCnt}}</text>
+  </view>
+</block>
+<block wx:if="{{btnType === 'line'}}">
+  <view wx:if="{{btnStatus === 'normal'}}" hover-class="linePress" class="btn lineNormal {{btnSize?btnSize:''}}">
+    <text>{{btnCnt}}</text>
+  </view>
+  <view wx:if="{{btnStatus === 'disable'}}" class="btn lineDisable {{btnSize?btnSize:''}}">
+    <text>{{btnCnt}}</text>
+  </view>
+</block>

@@ -1,0 +1,57 @@
+<!-- index.wxml -->
+<!-- primary -->
+<view class='flex flex_wrap flex_v_center flex_h_around' style="height:{{96*5}}rpx;">
+  <m-button btn-type="primary" btn-status="normal" btn-size="large" btn-cnt="主要操作 primary"></m-button>
+  <m-button btn-type="primary" btn-status="disable" btn-size="large" btn-cnt="主要操作 primary"></m-button>
+  <m-button btn-type="primary" btn-status="normal" btn-size="middle" btn-cnt="中按钮 normal"></m-button>
+  <m-button btn-type="primary" btn-status="disable" btn-size="middle" btn-cnt="中按钮 disable"></m-button>
+</view>
+<!-- default -->
+<view class='flex flex_wrap flex_v_center flex_h_around' style="height:{{96*3}}rpx;">
+  <m-button btn-type="default" btn-status="normal" btn-size="large" btn-cnt="辅助操作 default"></m-button>
+  <m-button btn-type="default" btn-status="disable" btn-size="large" btn-cnt="辅助操作 default"></m-button>
+</view>
+<!-- danger -->
+<view class='flex flex_wrap flex_v_center flex_h_around' style="height:{{96*3}}rpx;">
+  <m-button btn-type="danger" btn-status="normal" btn-size="large" btn-cnt="主要操作 normal"></m-button>
+  <m-button btn-type="danger" btn-status="disable" btn-size="large" btn-cnt="主要操作 disable"></m-button>
+</view>
+<!-- line -->
+<view class='flex flex_wrap flex_v_center flex_h_around' style="height:{{96*5}}rpx;">
+  <m-button btn-type="line" btn-status="normal" btn-size="large" btn-cnt="辅助操作 normal"></m-button>
+  <m-button btn-type="line" btn-status="disable" btn-size="large" btn-cnt="辅助操作 disable"></m-button>
+  <m-button btn-type="line" btn-status="normal" btn-size="middle" btn-cnt="辅助操作 normal"></m-button>
+  <m-button btn-type="line" btn-status="disable" btn-size="middle" btn-cnt="辅助操作 disable"></m-button>
+</view>
+<view class='flex flex_h_around mb16'>
+  <m-badge badge-type="primary" badge-status="normal" badge-cnt="按钮"></m-badge>
+  <m-badge badge-type="primary" badge-status="disable" badge-cnt="按钮"></m-badge>
+  <m-badge badge-type="default" badge-status="normal" badge-cnt="按钮"></m-badge>
+  <m-badge badge-type="default" badge-status="disable" badge-cnt="按钮"></m-badge>
+</view>
+<!--  -->
+<view class="flex flex_vh_center flex_1">
+  <m-button btn-type="primary" btn-status="normal" btn-size="large" btn-cnt="success toast" bindtap="showToast"></m-button>
+</view>
+<m-toast toast-type="{{toast.type}}" toast-info="{{toast.info}}" toast-visible="{{toast.visible}}"></m-toast>
+<view class="form" class="bg_normal w_100 h_100" style="height:500px">
+  <view class="mb16">
+    <m-input mode="single" title="姓名" placeholder="请输入姓名" bind:input="getInputVal"></m-input>
+    <m-input mode="single" title="年龄" placeholder="请输入年龄" bind:input="getInputYear"></m-input>
+  </view>
+  <!-- mutiple input -->
+  <view class="border_v_mustache">
+    <m-input mode="mutiple" title="身份证" line="bottom" placeholder="请输入身份证" bind:input="getInputYear"></m-input>
+    <m-input mode="mutiple" title="组织机构代码" line="bottom" placeholder="请输入组织机构代码" bind:input="getInputYear"></m-input>
+    <m-input mode="mutiple" title="银行卡号码" line="none" placeholder="请输入银行卡号码" bind:input="getInputYear"></m-input>
+  </view>
+  <!-- text area -->
+  <view class="border_v_mustache mb16">
+    <m-textarea maxlength="240" placeholder="请输入不少于10个字的描述" bind:input="collectionData"></m-textarea>
+  </view>
+  <view class='mb24'>
+  <m-upload mode="single"></m-upload>
+  </view>
+    <m-upload mode="mutiple"></m-upload>
+  
+</view>

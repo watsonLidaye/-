@@ -1,0 +1,4 @@
+<!-- common/modules/textarea/index.wxml -->
+<textarea class="textarea" placeholder-class="color_ddd" placeholder="{{placeholder}}" maxlength="{{maxlength}}" auto-height="{{autoHeight}}" bindinput="listenTapping">
+  <view class="textarea_tips">{{tapCount}}/{{maxlength}}</view>
+</textarea>

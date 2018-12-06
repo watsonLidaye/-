@@ -1,0 +1,27 @@
+<!--common/modules/badge/index.wxml-->
+<!-- default -->
+<block wx:if="{{badgeType === 'default'}}">
+  <block wx:if="{{badgeStatus === 'normal'}}">
+    <view class="badge defaultNormal" hover-class='defaultPress'>
+      <text>{{badgeCnt}}</text>
+    </view>
+  </block>
+  <block wx:if="{{badgeStatus === 'disable'}}">
+    <view class="badge defaultDisable">
+      <text>{{badgeCnt}}</text>
+    </view>
+  </block>
+</block>
+<!-- primary -->
+<block wx:if="{{badgeType === 'primary'}}">
+  <block wx:if="{{badgeStatus === 'normal'}}" >
+    <view class="badge primaryNormal" hover-class="primaryPress">
+      <text>{{badgeCnt}}</text>
+    </view>
+  </block>
+  <block wx:if="{{badgeStatus === 'disable'}}">
+    <view class="badge primaryDisable">
+      <text>{{badgeCnt}}</text>
+    </view>
+  </block>
+</block>

@@ -1,0 +1,7 @@
+<!--common/modules/upload/index.wxml-->
+<view class="upload single" wx:if="{{mode === 'single'}}">
+  <image class='priviewPic' wx:for="{{3}}"></image>
+</view>
+<view class='upload mutiple' wx:else>
+  <image class='priviewPic' wx:for="{{6}}"></image>
+</view>

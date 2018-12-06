@@ -1,0 +1,47 @@
+/* common/modules/input/index.wxss */
+.singleWrap {
+  padding-left: 32rpx;
+  box-sizing: border-box;
+  background: #fff;
+}
+.mutipleWrap {
+  padding-left: 32rpx;
+  box-sizing: border-box;
+  background: #fff;
+}
+.flex_30 {
+  flex: 0 0 30%;
+}
+.flex_1 {
+  flex: 1;
+}
+.inputName {
+  font-size: 34rpx;
+  color: #333;
+}
+.placeholder {
+  font-size: 34rpx;
+  color: #ccc;
+}
+.inputInner {
+  width: 100%;
+  height: 94rpx;
+  padding: 23rpx 0;
+  box-sizing: border-box;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.mutipleInner {
+  width: 100%;
+  height: 94rpx;
+  padding: 23rpx 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.border_eee {
+  border-bottom: 1rpx solid #eee;
+}

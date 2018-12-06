@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "m-icon": "/common/modules/icon/icon",
+    "m-badge": "/common/modules/badge/index",
+    "m-button": "/common/modules/button/index",
+    "m-toast": "/common/modules/toast/index",
+    "m-input": "/common/modules/input/index",
+    "m-textarea": "/common/modules/textarea/index",
+    "m-upload": "/common/modules/upload/index"
+  }
+}

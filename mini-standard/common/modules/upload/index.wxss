@@ -1,0 +1,25 @@
+/* common/modules/upload/index.wxss */
+.upload {
+  width: 750rpx;
+  background: #fff;
+  position: relative;
+  padding: 32rpx;
+  box-sizing: border-box;
+}
+.single {
+  height: 211rpx;
+}
+.mutiple {
+  height: 446rpx;
+}
+.upload .priviewPic:last-child {
+  margin-right: 0;
+}
+.priviewPic {
+  width: 150rpx;
+  height: 150rpx;
+  display: inline-flex;
+  border: 2rpx solid #ccc;
+  margin-right: 24rpx;
+  margin-bottom: 24rpx;
+}

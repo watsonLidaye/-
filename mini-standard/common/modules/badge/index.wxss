@@ -1,0 +1,41 @@
+/* common/modules/badge/index.wxss */
+.badge_text {
+  font-size: 14rpx;
+}
+.badge {
+  width: 104rpx;
+  height: 54rpx;
+  line-height: 54rpx;
+  text-align: center;
+  border-radius: 2rpx;
+  font-size: 28rpx;
+  box-sizing: border-box;
+  color: #fff;
+  background: #0DACFF;
+}
+.primaryNormal {
+  opacity: 1;
+}
+.primaryPress {
+  opacity: .8;
+}
+.primaryDisable {
+  opacity: .5;
+}
+.defaultNormal {
+  background: #F7FCFF;
+  border: 1rpx solid #0DACFF;
+  color: #0DACFF;
+}
+.defaultPress {
+  background: #F7FCFF;
+  color: #0DACFF;
+  border: 1rpx solid #0DACFF;
+  opacity: .8;
+}
+.defaultDisable {
+  background: #F7FCFF;
+  border: 1rpx solid #e5e5e5;
+  opacity: .5;
+  color: #e5e5e5;
+}

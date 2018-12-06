@@ -1,0 +1,79 @@
+/* common/modules/button/index.wxss */
+.btn {
+  width: 686rpx;
+  height: 94rpx;
+  border-radius: 4rpx;
+  font-size: 36rpx;
+  line-height: 94rpx;
+  color: #fff;
+  letter-spacing: 0.6rpx;
+  text-align: center;
+  box-sizing: border-box;
+  transition: 0.1s;
+}
+.btn.large {
+  width: 686rpx;
+}
+.btn.middle {
+  width: 560rpx;
+}
+/* primary */
+.primaryNormal {
+  background: #0dacff;
+}
+.primaryPress {
+  background: #0dacff;
+  opacity: 0.8;
+}
+.primaryDisable {
+  background: #0dacff;
+  opacity: 0.5;
+}
+/* default */
+.defaultNormal {
+  background: #fff;
+  border: 1rpx solid #ddd;
+  color: #333;
+}
+.defaultPress {
+  background: #ddd;
+  border: 1rpx solid #ddd;
+  color: #000;
+  opacity: 0.3;
+}
+.defaultDisable {
+  background: #fff;
+  border: 1rpx solid #ddd;
+  color: #333;
+  opacity: 0.3;
+}
+/* danger */
+.dangerNormal {
+  background: #e94f4f;
+}
+.dangerPress {
+  background: #e94f4f;
+  opacity: 0.8;
+}
+.dangerDisable {
+  background: #e94f4f;
+  opacity: 0.4;
+}
+/* line */
+.lineNormal {
+  background: #fff;
+  border: 1rpx solid #0dacff;
+  color: #0dacff;
+}
+.linePress {
+  background: #fff;
+  border: 1rpx solid #0dacff;
+  color: #0dacff;
+  opacity: 0.6;
+}
+.lineDisable {
+  background: #fff;
+  border: 1rpx solid #ddd;
+  color: #333;
+  opacity: 0.3;
+}
